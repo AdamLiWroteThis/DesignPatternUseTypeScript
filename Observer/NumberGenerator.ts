@@ -1,6 +1,5 @@
 import Observer from "./Observer";
-
-export default abstract class NumberGenerator {
+abstract class NumberGenerator {
   private observers: Array<Observer> = new Array<Observer>();
   public addObserver(observer: Observer): void {
     this.observers.push(observer);
@@ -18,3 +17,5 @@ export default abstract class NumberGenerator {
   public abstract getNumber(): number;
   public abstract execute(): void;
 }
+
+export default NumberGenerator;

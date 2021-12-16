@@ -1,5 +1,6 @@
 import NumberGenerator from "./NumberGenerator";
-
-export default interface Observer {
+interface Observer {
   update(generator: NumberGenerator): void;
 }
+
+export default Observer;

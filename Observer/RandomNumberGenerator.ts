@@ -1,6 +1,6 @@
 import random from "random";
 import NumberGenerator from "./NumberGenerator";
-export default class RandomNumberGenerator extends NumberGenerator {
+class RandomNumberGenerator extends NumberGenerator {
   private number: number;
   public constructor() {
     super();
@@ -16,3 +16,5 @@ export default class RandomNumberGenerator extends NumberGenerator {
     }
   }
 }
+
+export default RandomNumberGenerator;

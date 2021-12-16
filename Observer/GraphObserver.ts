@@ -1,7 +1,6 @@
 import NumberGenerator from "./NumberGenerator";
 import Observer from "./Observer";
-
-export default class GraphObserver implements Observer {
+class GraphObserver implements Observer {
   public update(generator: NumberGenerator): void {
     let consoleStr: string = "GraphObserver:";
     let count: number = generator.getNumber();
@@ -12,3 +11,5 @@ export default class GraphObserver implements Observer {
     console.log("\n");
   }
 }
+
+export default GraphObserver;
