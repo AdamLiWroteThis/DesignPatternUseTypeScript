@@ -3,7 +3,7 @@ import NumberGenerator from "./NumberGenerator";
 import DigitObserver from "./DigitObserver";
 import GraphObserver from "./GraphObserver";
 class Main {
-  public static main(args: Array<string>): void {
+  public static main(args: string[]): void {
     let generator: NumberGenerator = new RandomNumberGenerator();
     let observer1 = new DigitObserver();
     let observer2 = new GraphObserver();
