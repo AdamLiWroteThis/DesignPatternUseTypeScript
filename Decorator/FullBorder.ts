@@ -17,7 +17,7 @@ class FullBorder extends Border {
     } else if (row === this.display.getRows() + 1) {
       return `+${this.makeLine("-", this.display.getColumns())}+`;
     } else {
-      return `|${this.getRowText(row - 1)}|`;
+      return `|${this.display.getRowText(row - 1)}|`;
     }
   }
   makeLine(ch: string, count: number) {

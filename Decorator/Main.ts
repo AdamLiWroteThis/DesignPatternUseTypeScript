@@ -15,7 +15,10 @@ class Main {
     let b4: Display = new SideBorder(
       new FullBorder(
         new FullBorder(
-          new SideBorder(new FullBorder(new StringDisplay("你好，世界。")), "*")
+          new SideBorder(
+            new FullBorder(new StringDisplay("Hello, world.")),
+            "*"
+          )
         )
       ),
       ""
