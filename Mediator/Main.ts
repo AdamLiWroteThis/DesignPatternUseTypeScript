@@ -58,9 +58,6 @@ class BaseComponent {
  * other components. They also don't depend on any concrete mediator classes.
  */
 class Component1 extends BaseComponent {
-  constructor() {
-    super(new Mediator());
-  }
   public doA(): void {
     console.log("Component 1 does A.");
     this.mediator.notify(this, "A");
